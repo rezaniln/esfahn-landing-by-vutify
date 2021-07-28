@@ -245,10 +245,23 @@
   .about-area{
     flex-direction: column-reverse;
     padding: unset !important;
+    margin-top: 20px !important;
+    div{
+      padding-bottom: 20px !important;
+    }
   }
   .row{
     margin: unset;
   }
+  }
+  @media (min-width:768px) and (max-width:1264px){
+    .card-container{
+      padding: unset !important;
+    }
+    .about-area{
+      margin-top: 50px;
+      padding: unset !important;
+    }
   }
   
 
