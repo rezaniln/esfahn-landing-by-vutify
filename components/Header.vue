@@ -18,21 +18,21 @@
                 </v-btn>
               </template>
               <v-list>
-                <v-list-item> خانه </v-list-item>
-                <v-list-item> امکانات </v-list-item>
-                <v-list-item> آموزش استفاده </v-list-item>
-                <v-list-item> درباره ما </v-list-item>
-                <v-list-item> تماس با ما </v-list-item>
+                <v-list-item href="https://esfahanahan.com/"> خانه </v-list-item>
+                <v-list-item href="#features"> امکانات </v-list-item>
+                <v-list-item href="#guid-use"> آموزش استفاده </v-list-item>
+                <v-list-item href="https://esfahanahan.com/%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%D8%A7%D8%B5%D9%81%D9%87%D8%A7%D9%86-%D8%A2%D9%87%D9%86/"> درباره ما </v-list-item>
+                <v-list-item href="https://esfahanahan.com/%D8%AA%D9%85%D8%A7%D8%B3-%D8%A8%D8%A7-%D8%A7%D8%B5%D9%81%D9%87%D8%A7%D9%86-%D8%A2%D9%87%D9%86/"> تماس با ما </v-list-item>
               </v-list>
             </v-menu>
           </div>
           <div class="nav-item">
             <ul>
-              <li><a href="#"> خانه </a></li>
-              <li><a href="#"> امکانات </a></li>
-              <li><a href="#"> آموزش استفاده </a></li>
-              <li><a href="#"> درباره ما </a></li>
-              <li><a href="#"> تماس با ما </a></li>
+              <li><a href="https://esfahanahan.com/"> خانه </a></li>
+              <li><a href="#features"> امکانات </a></li>
+              <li><a href="#guid-use"> آموزش استفاده </a></li>
+              <li><a href="https://esfahanahan.com/%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%D8%A7%D8%B5%D9%81%D9%87%D8%A7%D9%86-%D8%A2%D9%87%D9%86/"> درباره ما </a></li>
+              <li><a href="https://esfahanahan.com/%D8%AA%D9%85%D8%A7%D8%B3-%D8%A8%D8%A7-%D8%A7%D8%B5%D9%81%D9%87%D8%A7%D9%86-%D8%A2%D9%87%D9%86/"> تماس با ما </a></li>
             </ul>
           </div>
         </v-col>
@@ -50,8 +50,8 @@
               . در ادامه به معرفی مزایای این روش و آموزش استفاده از آن
               میپردازیم.
             </p>
-            <button>امکانات</button>
-            <button>آموزش استفاده</button>
+            <button ><a href="#features">امکانات</a></button>
+            <button><a href="#guid-use">آموزش استفاده</a></button>
           </div>
         </v-col>
       </v-row>
@@ -62,10 +62,9 @@
 <script>
 export default {
   data() {
-    return {
-      items: ['Foo', 'Bar', 'Fizz', 'Buzz'],
+    
     }
-  },
+  
 }
 </script>
 
@@ -162,6 +161,10 @@ button {
     background-color: white;
     color: black;
   }
+    a{
+      text-decoration: none;
+      color: white;
+    }
 }
 @media only screen and (max-width: 992px) {
   .text-mobile {
