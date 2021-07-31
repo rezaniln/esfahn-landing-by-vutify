@@ -47,8 +47,6 @@
   </div>
 </template>
 
-
-
 <script>
 export default {
   data() {
@@ -60,6 +58,9 @@ export default {
   mounted() {
     window.addEventListener('scroll', this.handleScroll)
   },
+    beforeDestroy() {
+      window.removeEventListener('scroll',this.handleScroll)
+    },
   methods: {
     handleScroll() {
       if (this.scTimer) return
@@ -78,8 +79,6 @@ export default {
   },
 }
 </script>
-
-
 
 <style lang="scss" scoped>
 .row {
@@ -156,11 +155,17 @@ ul {
   bottom: 150px;
   right: 10px;
   z-index: 11;
-   background: #181156;
-    background: linear-gradient(to right, #181156 0%,#50498d 42%,#706ba4 85%,#645f93 100%);
-    p{
-      font-weight: bolder;
-      color: white;
-    }
+  background: #181156;
+  background: linear-gradient(
+    to right,
+    #181156 0%,
+    #50498d 42%,
+    #706ba4 85%,
+    #645f93 100%
+  );
+  p {
+    font-weight: bolder;
+    color: white;
+  }
 }
 </style>

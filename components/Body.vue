@@ -143,9 +143,10 @@
     }
   }
   .card-container {
-    margin-top: 20px;
-    padding: 0px 250px;
+    margin:30px 0 100px 0;
+    padding: 0px 140px;
     div {
+      
       div {
         box-shadow: none !important;
         div {
@@ -165,7 +166,7 @@
     }
   }
   .about-area {
-    padding: 50px 250px;
+    padding: 50px 140px;
     div {
       padding: 0;
       h4 {

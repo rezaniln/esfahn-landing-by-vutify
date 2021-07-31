@@ -2,11 +2,10 @@
   <v-container fluid class="pa-0 d-container">
     <div class="b1">
       <v-row class="nav-container ma-0">
-        <v-col>
+        <v-col cols="3">
           <img
             class="logo-svg"
             src="~assets/images/logo-full.svg"
-            width="300px"
           />
         </v-col>
         <v-col>
@@ -38,7 +37,7 @@
         </v-col>
       </v-row>
       <v-row class="text-mobile">
-        <v-col class="mobile-png" cols="6">
+        <v-col class="mobile-png" cols="4">
           <img src="~assets/images/banner.png" alt="" />
         </v-col>
         <v-col class="text-container" cols="6">
@@ -129,22 +128,24 @@ ul {
   }
 }
 .nav-container {
-  padding: 0px 150px;
+  padding: 0px 200px;
 }
 .text-mobile {
+  margin: 30px 110px 0 110px;
   justify-content: center;
   align-items: center;
   .mobile-png {
-    width: fit-content;
-    img {
-      float: left;
+    
+    img{
+      width: inherit;
     }
   }
+
   .text-box {
     h1,
     p {
       color: white;
-      padding-left: 200px;
+      
     }
   }
 }
@@ -159,7 +160,9 @@ button {
   box-shadow: none !important;
   &:hover {
     background-color: white;
-    color: black;
+    a{
+      color: black;
+    }
   }
     a{
       text-decoration: none;
@@ -171,6 +174,12 @@ button {
     flex-direction: column;
     justify-content: center !important;
     align-items: center !important;
+     .mobile-png{
+       max-width: 50%;
+       img{
+         width: inherit !important;
+       }
+     }
   }
   .text-box {
     h1,
